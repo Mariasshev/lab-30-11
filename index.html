@@ -8,16 +8,16 @@
 <body>
     <script>
         // Задание 1: Написать функцию, которая принимает 2 числа и возвращает меньшее из них
-        // function FindMin(){
-        //         if(arguments[0] < arguments[1]){
-        //             return arguments[0];
-        //         }
-        //         else{
-        //             return arguments[1];
-        //         }
-        //     }
-        // let min = FindMin(12,6);
-        // document.write("Min num is " + min);
+        function FindMin(){
+                if(arguments[0] < arguments[1]){
+                    return arguments[0];
+                }
+                else{
+                    return arguments[1];
+                }
+            }
+        let min = FindMin(12,6);
+        document.write("Min num is " + min);
         
 
         // Задание 2: Написать функцию, которая возводит переданное число в указанную степень
@@ -119,7 +119,7 @@
         // let result = remainder(5,17);
         // document.write("Result: " + result);
 
-        
+
         // Задание 7: Написать функцию, которая принимает от 1 до 5 чисел и возвращает их сумму.
         // function Sum(){
         //     let sum = 0;
@@ -189,9 +189,25 @@
         
         // function ShowDate(){
         //     if(arguments[0] <= 31 && arguments[1] <=12 && arguments[2] <=2023){
-        //         if(arguments[0])
+        //         if(arguments[0]){
+
+        //         }
         //     }
         // }
+        // function isLeapYear() {
+        //     return (arguments[2] % 4 == 0 && arguments[2] % 100 != 0) || arguments[2] % 400 == 0;
+        // }
+        // function daysInMonth() {
+        // let daysInMonth = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
+        //     if (isLeapYear()) 
+        //     {
+        //         daysInMonth[1] = 29;
+        //     }
+
+        //     return daysInMonth;
+        // }
+
+
     </script>
 </body>
 </html>
