@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Задание 1: Написать функцию, которая принимает 2 числа и возвращает меньшее из них
+        // function FindMin(){
+        //         if(arguments[0] < arguments[1]){
+        //             return arguments[0];
+        //         }
+        //         else{
+        //             return arguments[1];
+        //         }
+        //     }
+        // let min = FindMin(12,6);
+        // document.write("Min num is " + min);
+        
+
+        // Задание 2: Написать функцию, которая возводит переданное число в указанную степень
+        // function toPow(){
+        //     let sum = 1;
+        //     for(let i = 0; i < arguments[1]; i++){
+        //         sum *= arguments[0];
+        //     }
+        //     return sum;
+        // }
+        // let rez = toPow(3,3);
+        // document.write("Result is " + rez);
+
+
+        // Задание 3: Написать функцию, которая принимает 2 числа и знак (+ - * /), считает пример и возвращает результат
+        // function toSolve(){
+        //    let num1 = arguments[0];
+        //    let num2 = arguments[1];
+        //    let sign = arguments[2];
+        //    switch(sign){
+        //         case "+": 
+        //             return num1+num2;
+        //             break;
+        //         case "-":
+        //             return num1-num2;
+        //             break;
+        //         case "*":
+        //             return num1*num2;
+        //             break;
+        //         case "/": 
+        //             return num1/num2;
+        //             break;
+        //         default:
+        //             return null;
+        //             break;
+        //    }
+        // }
+        // let rez = toSolve(2,4,"*");
+        // document.write("Result: " + rez);
+
+
+        // Задание 4: Написать функцию, которая проверяет, является ли переданное ей число простым
+        // function isSimple(){
+        //     for(let i = 2; i <= 100; i++){
+        //         if(arguments[0] % i == 0 && arguments[0] != i){
+        //             break;
+        //             return false;
+        //         }
+        //         else if(i == 100){
+        //             return true;
+        //         }
+        //     }
+        // }
+        // let rez = isSimple(12);
+        // if(rez){
+        //     document.write("The number is simple!");
+        // }
+        // else{
+        //     document.write("The number is not simple :(");
+        // }
+
+
+        // Задание 5: Написать функцию, которая принимает число и выводит таблицу умножения для этого числа. Вызовите функцию для всех чисел от 2 до 9.
+        // function multTable(){
+        //     for(let i = 1; i <= 10; i++){
+        //         if(arguments[0] >= 2 || arguments[0] <= 9){
+        //             document.write(arguments[0] + " * " + i + " = " + arguments[0] * i );
+        //             document.write("<br/>");
+        //         }
+        //         else{
+        //             document.write("Wrong number!");
+        //             break;
+        //         }
+        //     }
+        // }
+        // multTable(2);
+        
+
+        // Задание 6: Написать функцию, которая реализует работу оператора %.
+        //Функция принимает 2 параметра и возвращает остаток от
+        //деления первого параметра на второй. В функции использовать только + - * /, оператор % не использовать. 
+       
+        // function remainder() {
+        // if (arguments[1] === 0) 
+        // {
+        //     return 0;
+        // }
+        // // Если первый параметр меньше второго параметра - возвращаем первый параметр
+        // if (arguments[0] < arguments[1]) 
+        // {
+        //     return arguments[0];
+        // }
+
+        // let quotient = arguments[0] / arguments[1];
+        // let remainder = arguments[0] - quotient * arguments[1];
+
+        // return remainder;
+        // }
+        // let result = remainder(5,17);
+        // document.write("Result: " + result);
+
+        
+        // Задание 7: Написать функцию, которая принимает от 1 до 5 чисел и возвращает их сумму.
+        // function Sum(){
+        //     let sum = 0;
+        //     if(arguments.length > 5 || arguments.length < 1)
+        //     {
+        //         return -1;
+        //     }
+        //     else
+        //     {
+        //         for(let i = 0; i < arguments.length-1; i++){
+        //             sum += arguments[i];
+        //         }
+        //         return sum;
+        //     }
+        // }
+        // let sum = Sum(1,2,3,4);
+        // document.write("Sum: " + sum);
+
+
+        // Задание 8: Написать функцию, которая принимает от 1 до 5 чисел и возвращает большее из них
+        // function Max(){
+        //     let max;
+        //     if(arguments.length > 5 || arguments.length < 1)
+        //     {
+        //         return -1;
+        //     }
+        //     else
+        //     {
+        //         for(let i = 0; i < arguments.length-1; i++){
+        //             if(arguments[i] > arguments[i+1]){
+        //                 max = arguments[i];
+        //             }
+        //             else{
+        //                 max = arguments[i+1];
+        //             }
+        //         }
+        //         return max;
+        //     }
+        // }
+        // let max = Max(1,2,3,4);
+        // document.write("Max: " + max);
+
+        // Задание 9: Написать функцию, которая выводит все четные или нечетные числа, в указанном пользователем диапазоне. 
+        //Какие числа выводить, определяется третьим параметром типа bool (true – четные, false – нечетные).  
+
+        // function showNumbers(){
+        //     for(let i = arguments[0]; i <= arguments[1]; i++){
+        //         if(arguments[2] == true){
+        //             if(i % 2 == 0){
+        //                 document.write(i);
+        //                 document.write("<br/>");
+        //             }
+        //         }
+        //         else{
+        //             if(i % 2 != 0){
+        //                 document.write(i);
+        //                 document.write("<br/>");
+        //             }
+        //         }
+        //     }
+        // }
+        // showNumbers(1,9,false);
+
+
+        // Задание 10: Написать функцию, которая принимает дату (день, месяц, год) и возвращает дату следующего дня в виде строки
+        // «дд.мм.гггг». Проверку на високосный год желательнo написать отдельной функцией.
+        
+        // function ShowDate(){
+        //     if(arguments[0] <= 31 && arguments[1] <=12 && arguments[2] <=2023){
+        //         if(arguments[0])
+        //     }
+        // }
+    </script>
+</body>
+</html>
